@@ -4,7 +4,7 @@ from pymongo import MongoClient
 class DBUtils(object):
 
     def __init__(self):
-        self._client = MongoClient('mongodb://db_user:dbuser123@ds157204.mlab.com:57204/bigdata2')
+        self._client = MongoClient('')
         self._db = self._client.bigdata2
 
     def align_country_names(self):
