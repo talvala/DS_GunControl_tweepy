@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 import json
 
-client = MongoClient('mongodb://db_user:dbuser123@ds157204.mlab.com:57204/bigdata2')
+client = MongoClient('')
 mydb = client.bigdata2
 
 

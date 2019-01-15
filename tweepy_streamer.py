@@ -2,10 +2,10 @@ import tweepy
 import json
 
 # Specify the account credentials in the following variables:
-consumer_key = "2ky2ZNgGvpOMNuS357wfGoEkc"
-consumer_secret = "JgJDqJvjGGWt3M2YXhwfuCXI0tLAe8BcHD42DilYYhNfBeJ8q1"
-access_token = "1064109191458111488-CwdpdnSLXQzytzg71vzCmBESzUYSDa"
-access_token_secret = "5PMVLpUWzl6fzq20KyiJnBIGODIuUxYrgfsTyBMrqkacm"
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 
 # This listener will print out all Tweets it receives
