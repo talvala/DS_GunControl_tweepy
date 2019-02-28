@@ -2,8 +2,8 @@ from pymongo import MongoClient
 
 import json
 
-client = MongoClient('mongodb://db_user:dbuser123@ds157204.mlab.com:57204/bigdata2')
-mydb = client.bigdata2
+client = MongoClient('')
+mydb = client.bigdata
 
 
 def add_tweet(text, location):
@@ -15,9 +15,10 @@ def add_tweet(text, location):
         })
 
 
-jsonString = open("test.json", 'r')
+jsonString = open("tweets_final.json", 'r')
 jsonObject = json.load(jsonString)
 for line in jsonObject:
+    print (line)
     text = line['text']
     print('text:')
     print(text)
