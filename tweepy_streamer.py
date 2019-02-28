@@ -38,7 +38,7 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
 
     # Connect the stream to our listener
-    stream = tweepy.Stream(auth, listener)
+    stream = tweepy.Stream(auth, listener, timeout=18000)
     stream.filter(
         track=['second amendment', 'gun control', 'guns in america', '2nd amendment', 'guns control', 'america guns',
-               'america shooting', 'shooting america', 'control guns', 'guns america', 'usa guns', 'guns usa', 'usa shooting', 'guns in usa'])
+               'america shooting', 'shooting america', 'control guns', 'guns america', 'usa guns', 'guns usa', 'usa shooting', 'guns in usa','amendment second','amendment 2nd','2 amendment','amendment 2', 'control guns','shooring usa','shooring america','america shooting'])
