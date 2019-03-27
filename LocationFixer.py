@@ -1,18 +1,23 @@
 import re
-
 from pymongo import MongoClient
 
+DB_NAME = 'bigdata'
 
-class DBUtils(object):
+
+class LocationFixer(object):
 
     def __init__(self):
-        self._client = MongoClient('')
-        self._db = self._client.bigdata
-
+        self._db = self._get_db_by_name(DB_NAME)
+    
+    @staticmethod
+    def _get_db_by_name(db_name):
+        client = MongoClient('')
+        return client[db_name]
+    
     def align_country_names(self):
         """
-            this method runs over the tweets and aligns location names with the countries mapping collection"
-            """
+        this method runs over the tweets and aligns location names with the countries mapping collection"
+        """
         country_names_mapping = self._map_country_names()
 
         self._clear_empty_location()
@@ -67,5 +72,5 @@ class DBUtils(object):
 
 
 if __name__ == "__main__":
-    db_util = DBUtils()
-    db_util.align_country_names()
+    fixer = LocationFixer()
+    fixer.align_country_names()
