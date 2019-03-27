@@ -1,7 +1,7 @@
 import tweepy
 import json
 
-# Specify the account credentials in the following variables:
+### Credentials ###
 consumer_key = ""
 consumer_secret = ""
 access_token = ""
